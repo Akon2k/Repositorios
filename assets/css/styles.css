@@ -17,10 +17,16 @@ body * {
   padding: 0;
 }
 
+/* SACAR */
+/* div {
+  border: 1px solid red;
+} */
+
 .naranja {
   background: #ff8000;
   color: #ffffff;
   position: fixed;
+  z-index: 1000;
   width: 100vw;
   text-align: right;
 }
@@ -32,13 +38,13 @@ body * {
   background-size: cover;
   background-position: left;
   color: #ffffff;
-  padding: 5rem 0rem 22rem 0rem;
+  padding: 47rem 0rem 0rem 0rem;
   background-size: 100%;
 }
 
 #General {
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 3rem;
   padding-left: 9.375rem;
   padding-right: 9.375rem;
@@ -46,7 +52,7 @@ body * {
 
 #Detalle-1 {
   text-align: justify;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 3rem;
   margin-bottom: 3.125rem;
   padding-left: 9.375rem;
@@ -54,10 +60,40 @@ body * {
 
 #Detalle-2 {
   text-align: justify;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 3rem;
   margin-bottom: 3.125rem;
   padding-right: 8.375rem;
+}
+
+#contenedor-experiencia {
+  text-align: center;
+  padding: 3rem 3rem;
+}
+
+.img-exp {
+  /* display: inline-block */
+  width: 100px;
+  display: block;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+h2 {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+#trabajos {
+  background-color: #ff8000;
+}
+
+#row-ultimos-trabajos-1 {
+  padding: 4rem 5rem 0rem;
+}
+
+#row-ultimos-trabajos-2 {
+  padding: 2rem 5rem 0rem;
 }
 
 .oscuro {
@@ -72,7 +108,31 @@ body * {
 }
 
 @media only screen and (max-width: 320px) {
+  .hero-section {
+    text-align: center;
+    background-image: url("../img/bg_hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20rem 0rem 0rem 0rem;
+    height: 430px;
+    /* background-size: 100% */
+  }
+
   #contenedor {
     display: none;
+  }
+
+  #contenedor-experiencia {
+    text-align: center;
+    padding: 0rem 0rem;
+  }
+
+  #row-ultimos-trabajos-1 {
+    padding: 1rem 1rem 0rem;
+  }
+  #row-ultimos-trabajos-2 {
+    padding: 0rem 1rem 0rem;
   }
 }
